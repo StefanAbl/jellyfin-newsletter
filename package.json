@@ -1,0 +1,26 @@
+{
+  "name": "jellyfin-newsletter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "api": "openapi-generator-cli generate -i ./jellyfin-openapi-stable.json -o api/ -g typescript-axios --additional-properties=supportsES6=true,npmVersion=6.9.0,typescriptThreePlus=true"
+  },
+  "author": "StefanAbl",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.2",
+    "config": "^3.3.9",
+    "handlebars": "^4.7.8",
+    "js-yaml": "^4.1.0",
+    "nodemailer": "^6.9.7",
+    "typescript": "^5.3.3"
+  },
+  "devDependencies": {
+    "@openapitools/openapi-generator-cli": "^2.7.0",
+    "@types/config": "^3.3.3",
+    "@types/node": "^20.10.5",
+    "@types/nodemailer": "^6.4.14"
+  }
+}

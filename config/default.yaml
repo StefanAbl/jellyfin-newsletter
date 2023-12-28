@@ -1,0 +1,17 @@
+baseUrl: http://localhost/
+token: 
+send: true
+recipients:
+- name: admin
+  mail: admin@e.mail
+mail:
+  host: mail.com
+  port: 587
+  secure: false
+  auth: 
+    user: "sender@mail.com"
+    pass: "sosecure"
+  from: '"Jellyfin" <sender@mail.com>'
+  replyTo: real@mail.com
+  subject: News from Jellyfin
+  
